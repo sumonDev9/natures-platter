@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-textprimary: #111111;
+          --color-textsecondary: #179800;
+        }
+      </style>
+      
+</head>
+<body>
+    <!-- navbar start here -->
+     <nav class="flex justify-between items-center px-5 py-2">
+        <!-- logo and text -->
+       <div>
+        <img class="w-[100px] h-[40px] lg:h-[50px] lg:w-[150px]" src="c2-assets/logo-header.png" alt="">
+       </div> 
+       <!-- nav menu -->
+       <div class="flex item-center items-center gap-4 text-textprimary text-base lg:text-xl hidden md:block">
+        <a href="#">Product</a>
+        <a href="#">Services</a>
+        <a href="#">Contact us</a>
+       </div> 
+       <!-- login and register -->
+       <div class="hidden md:block">
+        <button class="px-2 py-1 lg:px-3 lg:py-2 bg-white text-textprimary border-2 border-textsecondary cursor-pointer text-base lg:text-xl rounded-md">Login</button>
+        <button class="px-2 py-1 lg:px-3 lg:py-2 bg-textsecondary text-white text-base lg:text-xl cursor-pointer rounded-md">Register</button>
+       </div> 
+       <div class="flex md:hidden mt-3">
+        <i class="fa-solid fa-bars text-textsecondary"></i>
+       </div>
+     </nav>
+    <!-- navbar end here -->
+
+    <!-- bannar start here -->
+     <section class="bg-gradient-to-b from-white to-[#EFEBE3]">
+        <div class="flex flex-col justify-center text-center pt-5">
+            <h1 class="text-xl md:text-[35px] lg:text-[50px] font-bold">Freshness <span class="text-textsecondary">You Can <br>
+                Count</span> On, Prices You’ll Love!</h1>
+            <p class="md:text-base text-sm lg:text-xl text-base text-textprimary max-w-[550px] mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>    
+            <img class="w-[600px] h-[500px] mx-auto" src="c2-assets/hero-vegetables.png" alt="">
+        </div>
+     </section>
+    <!-- bannar end here -->
+</body>
+</html>
